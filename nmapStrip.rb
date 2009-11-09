@@ -15,7 +15,7 @@ begin
   file = File.new(ARGV[0], "r")
   outfile = File.new(ARGV[1], "a")
   while (line = file.gets)
-    if (line =~ /Host (\d){1,3}.(\d){1,3}.(\d){1,3}.(\d){1,3} appears to be down/) == nil
+    if (line =~ /Host (\d){1,3}\.(\d){1,3}\.(\d){1,3}\.(\d){1,3} appears to be down/) == nil
       outfile.write(line)
     end
   end
